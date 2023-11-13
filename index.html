@@ -18,6 +18,31 @@
 
     </head>
     <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <div class="logo"><a href="index.html"><img src="/assets/img/Papuga-logo_light.svg" alt="Papuga i spółka"
+                            height="80" width="350"></a></div>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="#hero">Strona główna</a></li>
+                        <li><a class="nav-link scrollto" href="#about">Kancelaria</a></li>
+                        <li><a class="nav-link scrollto" href="#services">Usługi</a></li>
+                        <li><a class="nav-link scrollto " href="#portfolio">Galeria</a></li>
+                        <li><a class="nav-link scrollto" href="#team">Nasz Team</a></li>
+                        <!-- <li><a href="blog.html">Blog</a></li> -->
+                        <li><a class="nav-link scrollto" href="#contact">Kontakt</a></li>
+                        <li><a class="getstarted scrollto" href="#about">Formularz</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav><!-- .navbar -->
+
+            </div>
+        </header><!-- End Header -->
         <!-- Main Banner  -->
           <section id="banner">
             <div class="banner-container">
@@ -70,5 +95,75 @@
               </div>
             </div>
           </section>
+          <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Kontakt</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                        fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row contact-info">
+
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Adres</h3>
+                            <address>ul.Papugowa 25, 44-444 Papugowo </address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="bi bi-phone"></i>
+                            <h3>Numer telefonu</h3>
+                            <p><a href="tel:+155895548855">+48 123 456 789</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@example.com">kancelaria@papuga.com</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Imię i nazwisko"
+                                    data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Adres E-mail"
+                                    data-rule="email" data-msg="Please enter a valid email">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Temat"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Wiadomość"
+                                required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Ładowanie</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Twoja wiedomosć została wysłana</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Wyślij wiadomość</button></div>
+                    </form>
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
     </body>
 </html>
