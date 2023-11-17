@@ -1,0 +1,197 @@
+.back-to-top{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: $yellow-color;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    i {
+        font-size: 28px;
+        color: #fff;
+        line-height: 0;
+    }
+    
+    &:hover {
+        background: $yellow-color;
+        color: #fff;
+    }
+    
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+#header {
+    background: rgba(0, 0, 0, 0.75);
+    transition: all 0.5s;
+    z-index: 997;
+    height: 80px;
+    .logo {
+        max-width:100%;
+      img{
+        max-height:75px;
+      }
+        a{
+            color: #fff;
+        }
+      
+    }
+}
+
+
+.navbar {
+    padding: 0;
+  
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+  
+      li {
+        position: relative;
+      }
+  
+      > li {
+        white-space: nowrap;
+        padding: 10px 0 10px 22px;
+  
+        a, a:focus {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 4px;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          color: $grey-color;
+          white-space: nowrap;
+          transition: 0.3s;
+          text-transform: uppercase;
+          position: relative;
+  
+          i, &:focus i {
+            font-size: 12px;
+            line-height: 0;
+            margin-left: 5px;
+          }
+        }
+  
+        a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -6px;
+          left: 0;
+          background-color: $yellow-color;
+          visibility: hidden;
+          width: 0;
+          transition: all 0.3s ease-in-out 0s;
+        }
+  
+        a:hover:before, li:hover > a:before, .active:before {
+          visibility: visible;
+          width: 100%;
+        }
+  
+        a:hover, .active, .active:focus, li:hover > a {
+          color: #fff;
+        }
+      }
+  
+      .getstarted, .getstarted:focus {
+        padding: 8px 25px;
+        margin-left: 12px;
+        color: #fff;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        border: 2px solid $yellow-color;
+  
+        &:hover, &:focus:hover {
+          color: #fff;
+          background: $yellow-color;
+        }
+  
+        &:hover:before, li:hover > .getstarted:before {
+          visibility: hidden;
+        }
+      }
+  
+      .dropdown {
+        ul {
+          display: block;
+          position: absolute;
+          left: 22px;
+          top: calc(100% + 30px);
+          margin: 0;
+          padding: 10px 0;
+          z-index: 99;
+          opacity: 0;
+          visibility: hidden;
+          background: #fff;
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          transition: 0.3s;
+  
+          li {
+            min-width: 200px;
+  
+            a {
+              padding: 10px 20px;
+              font-size: 14px;
+              font-weight: 500;
+              text-transform: none;
+              color: #2a2a2a;
+  
+              i {
+                font-size: 12px;
+              }
+  
+              &:hover, .active:hover, li:hover > a {
+                color: $yellow-color;
+              }
+            }
+          }
+  
+          &:hover > ul {
+            opacity: 1;
+            top: 100%;
+            visibility: visible;
+          }
+  
+          .dropdown {
+            ul {
+              top: 0;
+              left: calc(100% - 30px);
+              visibility: hidden;
+  
+              &:hover > ul {
+                opacity: 1;
+                top: 0;
+                left: 100%;
+                visibility: visible;
+              }
+            }
+  
+            @media (max-width: 1366px) {
+              ul {
+                left: -90%;
+  
+                &:hover > ul {
+                  left: -100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
