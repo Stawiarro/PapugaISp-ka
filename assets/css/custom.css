@@ -266,6 +266,51 @@ section.section-title p {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.about .content {
+  padding: 30px 0;
+}
+.about .content h3 {
+  font-weight: 500;
+  font-size: 34px;
+}
+.about .content p {
+  margin-bottom: 1rem;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  padding: 0 0 8px 26px;
+  position: relative;
+}
+.about .content ul li i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: #c98d2d;
+}
+.about .image {
+  background: url("../img/about.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  filter: grayscale(1);
+}
+@media (max-width: 991px) {
+  .about .image {
+    text-align: center;
+  }
+  .about .image img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 667px) {
+  .about .image img {
+    max-width: 100%;
+  }
+}
+
 #footer {
   background: #111111;
   padding: 0 0 1% 0;
