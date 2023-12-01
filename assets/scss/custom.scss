@@ -1,4 +1,5 @@
 @import 'variables';
-
-@import 'partials/header';
-@import 'partials/footer';
+@import './partials/globals';
+@import './partials/header';
+@import './partials/banner';
+@import './partials/footer';
