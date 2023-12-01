@@ -1,1 +1,1 @@
-faq.js plik
+faq.js
