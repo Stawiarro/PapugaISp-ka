@@ -12,7 +12,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    transition: 0.3;
+    display:block!important;
 
     &::before {
       content: "";
@@ -36,6 +36,8 @@
     right: 0;
 
     .carousel-content {
+
+      transform: translateY(30px);
       text-align: center;
 
       h2 {
@@ -56,7 +58,12 @@
         color: #fff;
       }
     }
+    &.active {
+      opacity: 1;
+      position: relative;
+    }
   }
+  
 
   .carousel-inner .carousel-item {
     transition-property: opacity;
@@ -67,6 +74,8 @@
   .carousel-inner .active.carousel-item-start,
   .carousel-inner .active.carousel-item-end {
     opacity: 0;
+    transition: opacity 1s ease-in-out;
+ 
   }
 
   .carousel-inner .active,
