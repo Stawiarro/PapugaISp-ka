@@ -989,4 +989,33 @@ section.section-title p {
   font-size: 13px;
   color: #fff;
 }
+
+.lawyers-page .lawyer-cont {
+  background-color: #f1f1f1;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.lawyers-page .lawyer-cont h4 {
+  font-weight: 800;
+}
+.lawyers-page .lawyer-cont h4 a {
+  color: #c98d2d !important;
+}
+.lawyers-page .lawyer-cont img {
+  max-width: 35%;
+  margin-right: 1%;
+  float: left;
+}
+.lawyers-page .lawyer-cont .spec {
+  font-style: italic;
+  font-weight: 500;
+}
+.lawyers-page .lawyer-cont p {
+  text-align: justify;
+}
+.lawyers-page .lawyer-cont:nth-child(2) img {
+  margin-left: 1%;
+  float: right;
+}
+
 /*# sourceMappingURL=custom.css.map */
