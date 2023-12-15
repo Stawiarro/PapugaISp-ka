@@ -40,10 +40,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // $emailContent = "
         //     <html>
         //     <head>
-        //         <title>Dziękujemy za kontakt</title>
+        //         <title>Prośba o kontakt, kancelaria papuga i spółka</title>
         //     </head>
         //     <body>
-        //         Dziękujemy za kontakt <p><strong>Imię:</strong>$name</p>, w krótce skontaktujemy się z tobą.
+        //         Dziękujemy za zaufanie <p><strong>Imię:</strong>$name</p>, wkrótce skontaktujemy się z tobą.
         //     </body>
         //     </html>
         // ";
