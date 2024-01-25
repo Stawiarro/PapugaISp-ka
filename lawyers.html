@@ -6,12 +6,48 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Groovin Bootstrap Template - Index</title>
+  <style>
+    body {
+      font-size: 16px;
+    }
+
+    .zoom-controls {
+      position: fixed;
+      top: 1px;
+      right: 10px;
+    }
+
+    .content {
+      margin-top: 0px;
+    }
+    .eng{
+        height:20px;
+        margin-left:20px
+    }
+  </style>
+	  <script>
+             let currentZoom = 100;
+
+    function zoomIn() {
+      currentZoom += 10;
+      updateZoom();
+    }
+
+    function zoomOut() {
+      currentZoom -= 10;
+      updateZoom();
+    }
+
+    function updateZoom() {
+      document.body.style.fontSize = `${currentZoom}%`;
+    }
+  </script>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon">
-  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -35,29 +71,39 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
+  <header id="header" class="fixed-top d-flex align-items-center content">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo"><a href="index.html"><img src="./assets/img/Papuga-logo_light.svg" alt="Papuga i spółka" height="80" width="350"></a></div>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/img/Papuga-logo_light.svg" alt="Papuga i spółka" height="80" width="350">
+            </a>
+        </div>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html#banner">Strona główna</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">Kancelaria</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Usługi</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Nasz Team</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a class="nav-link scrollto" href="index.html#contact">Kontakt</a></li>
-          <!-- <li><a class="getstarted scrollto" href="#about">Formularz</a></li> -->
-          <li><a class="nav-link scrollto " href="gallery.html">Galeria</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="./index.html#banner">Strona główna</a></li>
+                <li><a class="nav-link scrollto" href="./index.html#about">Kancelaria</a></li>
+                <li><a class="nav-link scrollto" href="./index.html#services">Usługi</a></li>
+                <li><a class="nav-link scrollto" href="./index.html#team">Nasz Team</a></li>
+                <!-- <li><a href="blog.html">Blog</a></li> -->
+                <li><a class="nav-link scrollto" href="./index.html#contact">Kontakt</a></li>
+                <!-- <li><a class="getstarted scrollto" href="#about">Formularz</a></li> -->
+                <li><a class="nav-link scrollto " href="gallery.html">Galeria</a></li>
+            </ul>
+            <a href="/lawyers-eng.html">
+                <img src="./assets/img/angielski.png" alt="Flaga angielska" class="eng">
+            </a>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+<div class="zoom-controls">
+<button onclick="zoomIn()">Powiększ</button>
+<button onclick="zoomOut()">Zmniejsz</button>
     </div>
-  </header><!-- End Header -->
+</header>
+<!-- End Header -->
 
   <main id="main">
 
@@ -68,7 +114,7 @@
 
         <div class="section-title">
           <h2>Nasz Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Adwokaci, których tworzą nasz zespół, posiadają bogate doświadczenie oraz głęboką wiedzę prawniczą. Ich pasja do sprawiedliwości i zaangażowanie w obronę interesów klientów sprawiają, że są niezastąpieni w dziedzinie prawa. Rozumieją, że każda sprawa wymaga indywidualnego podejścia i starają się zapewnić swoim klientom kompleksową pomoc prawna na najwyższym poziomie.</p>
         <h4>Poznaj profile naszych prawników i zdecyduj z kim chcesz się skontaktować.</h3>
         <p>Jezeli nie jesteś pewny, wybierz email ogólny. To my przekierujemy Twoją wiadomosć do odpowiedinego specjalisty!</p>
         
@@ -77,47 +123,27 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 lawyer-cont">
            <img src = "assets/img/team/team-1.png">
-            <h4 class="title"><a href="">Walter White</a></h4>
-            <p class="spec">Eu congue magna volutpat</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt nisi in purus lacinia aliquam non id nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin porttitor consequat ullamcorper. Donec sed faucibus nibh, nec faucibus augue. Aenean eu dolor pharetra, facilisis velit ut, tincidunt turpis. Curabitur eget mauris in enim vestibulum mattis. Mauris quis ante sed enim condimentum malesuada eget non nunc. Aliquam commodo justo non massa consequat, eget porta massa auctor. Mauris ipsum ligula, volutpat sed maximus eget, mollis a mauris.</p>
+            <h4 class="title"><a href="">Anna Nowak</a></h4>
+            <p class="spec">Sprawiedliwość i empatia są fundamentami mojej pracy. </p>
+            <p>Anna Nowak to doświadczony adwokat specjalizujący się w obszarze prawa rodzinnego oraz prawa karnego. Posiada bogate doświadczenie w reprezentowaniu klientów w trudnych sprawach dotyczących rozwodów, separacji, alimentów oraz spraw o opiekę nad dziećmi. Jej empatyczne podejście oraz zdolność do słuchania czynią ją wyjątkowo skutecznym adwokatem, który zawsze stawia interesy klienta na pierwszym miejscu.</p>
 
-            <p>Vestibulum auctor arcu metus, eu congue magna volutpat vitae. Nunc maximus sapien nec fermentum lacinia. Praesent porttitor ultricies nisl, quis lacinia orci auctor vitae. Donec vitae nunc in dolor tempus commodo a quis mi. Nullam eu metus mattis felis tristique vehicula. Fusce sed eleifend sapien. Fusce pellentesque ligula ut dui ultrices bibendum. Aliquam sollicitudin leo id auctor fringilla. Pellentesque imperdiet odio non leo pulvinar congue. Curabitur consectetur mollis magna ac efficitur.</p>
-                
-            <p>In molestie, nulla id scelerisque tristique, ligula magna suscipit nunc, in pulvinar orci mi in tortor. Duis lacinia erat semper lorem iaculis laoreet. Mauris id sem non metus lobortis accumsan. Sed facilisis libero lobortis est luctus, ut pulvinar nunc malesuada. Maecenas mollis felis magna, nec pharetra urna posuere in. Fusce lobortis, lorem id dapibus suscipit, tortor urna pretium sapien, sit amet maximus urna arcu semper orci. Morbi quis velit tellus. Morbi quis ex at enim tempus sodales. Nulla erat nulla, accumsan ut felis eu, aliquet tincidunt risus. Nullam id cursus mauris. Sed fermentum nisi orci, sit amet convallis justo consequat eget.</p>
+            <p>Ponadto, dr. Nowak specjalizuje się także w prawie karnym, ze szczególnym uwzględnieniem spraw dotyczących przestępstw przeciwko życiu i zdrowiu oraz przestępstw seksualnych. Jej dogłębna znajomość przepisów prawa oraz umiejętność przygotowywania solidnych obron w sądzie sprawiają, że jest cenionym specjalistą w tej dziedzinie.</p>
+
+                <p>Jako członek naszego zespołu adwokackiego, dr. Anna Nowak jest gotowa pomóc klientom w każdej trudnej sytuacji prawnej, zapewniając im profesjonalną i skuteczną reprezentację oraz wsparcie na każdym etapie procesu prawnego.</p>
+
+            <p>Jako członek naszego zespołu adwokackiego, dr. Anna Nowak jest gotowa pomóc klientom w każdej trudnej sytuacji prawnej, zapewniając im profesjonalną i skuteczną reprezentację oraz wsparcie na każdym etapie procesu prawnego.</p>
           </div>
           <div class="col-lg-12 col-md-12 lawyer-cont">
             <img src = "assets/img/team/team-2.png">
-             <h4 class="title"><a href="">Sarah Jhonson</a></h4>
-             <p class="spec">Eu congue magna volutpat</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt nisi in purus lacinia aliquam non id nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin porttitor consequat ullamcorper. Donec sed faucibus nibh, nec faucibus augue. Aenean eu dolor pharetra, facilisis velit ut, tincidunt turpis. Curabitur eget mauris in enim vestibulum mattis. Mauris quis ante sed enim condimentum malesuada eget non nunc. Aliquam commodo justo non massa consequat, eget porta massa auctor. Mauris ipsum ligula, volutpat sed maximus eget, mollis a mauris.</p>
+             <h4 class="title"><a href="">Adam Kowalki</a></h4>
+             <p class="spec">Solidność, zaangażowanie i skuteczność - klucze do osiągnięcia sprawiedliwości i sukcesu w każdej sprawie prawnej.</p>
+             <p>Adwokat Adam Kowalski to doświadczony prawnik, który specjalizuje się w obszarze prawa cywilnego oraz prawa handlowego. Posiada bogate doświadczenie w reprezentowaniu klientów w różnorodnych sprawach, od sporów majątkowych po sprawy dotyczące umów handlowych i zobowiązań.</p>
  
-             <p>Vestibulum auctor arcu metus, eu congue magna volutpat vitae. Nunc maximus sapien nec fermentum lacinia. Praesent porttitor ultricies nisl, quis lacinia orci auctor vitae. Donec vitae nunc in dolor tempus commodo a quis mi. Nullam eu metus mattis felis tristique vehicula. Fusce sed eleifend sapien. Fusce pellentesque ligula ut dui ultrices bibendum. Aliquam sollicitudin leo id auctor fringilla. Pellentesque imperdiet odio non leo pulvinar congue. Curabitur consectetur mollis magna ac efficitur.</p>
+             <p>Jego praktyka obejmuje doradztwo prawne dla klientów indywidualnych oraz firm, zapewniając kompleksową pomoc w rozwiązywaniu problemów prawnych w sposób skuteczny i efektywny. Jego głęboka znajomość prawa oraz umiejętność analizy skomplikowanych zagadnień prawnych czynią go niezastąpionym partnerem dla klientów poszukujących profesjonalnej pomocy prawnej.</p>
                  
-             <p>In molestie, nulla id scelerisque tristique, ligula magna suscipit nunc, in pulvinar orci mi in tortor. Duis lacinia erat semper lorem iaculis laoreet. Mauris id sem non metus lobortis accumsan. Sed facilisis libero lobortis est luctus, ut pulvinar nunc malesuada. Maecenas mollis felis magna, nec pharetra urna posuere in. Fusce lobortis, lorem id dapibus suscipit, tortor urna pretium sapien, sit amet maximus urna arcu semper orci. Morbi quis velit tellus. Morbi quis ex at enim tempus sodales. Nulla erat nulla, accumsan ut felis eu, aliquet tincidunt risus. Nullam id cursus mauris. Sed fermentum nisi orci, sit amet convallis justo consequat eget.</p>
-           </div>
-          
-        </div>
+             <p>Adwokat Kowalski wyróżnia się profesjonalizmem, zaangażowaniem oraz skutecznością w działaniu. Jego celem jest zapewnienie klientom wsparcia na każdym etapie procesu prawnego, dbając o ich interesy i osiągając jak najlepsze rezultaty.</p>
 
-        <div class="row">
-          <div class="col-lg-12 col-md-12 lawyer-cont">
-           <img src = "assets/img/team/team-3.png">
-            <h4 class="title"><a href="">William Anderson</a></h4>
-            <p class="spec">Eu congue magna volutpat</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt nisi in purus lacinia aliquam non id nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin porttitor consequat ullamcorper. Donec sed faucibus nibh, nec faucibus augue. Aenean eu dolor pharetra, facilisis velit ut, tincidunt turpis. Curabitur eget mauris in enim vestibulum mattis. Mauris quis ante sed enim condimentum malesuada eget non nunc. Aliquam commodo justo non massa consequat, eget porta massa auctor. Mauris ipsum ligula, volutpat sed maximus eget, mollis a mauris.</p>
-
-            <p>Vestibulum auctor arcu metus, eu congue magna volutpat vitae. Nunc maximus sapien nec fermentum lacinia. Praesent porttitor ultricies nisl, quis lacinia orci auctor vitae. Donec vitae nunc in dolor tempus commodo a quis mi. Nullam eu metus mattis felis tristique vehicula. Fusce sed eleifend sapien. Fusce pellentesque ligula ut dui ultrices bibendum. Aliquam sollicitudin leo id auctor fringilla. Pellentesque imperdiet odio non leo pulvinar congue. Curabitur consectetur mollis magna ac efficitur.</p>
-                
-            <p>In molestie, nulla id scelerisque tristique, ligula magna suscipit nunc, in pulvinar orci mi in tortor. Duis lacinia erat semper lorem iaculis laoreet. Mauris id sem non metus lobortis accumsan. Sed facilisis libero lobortis est luctus, ut pulvinar nunc malesuada. Maecenas mollis felis magna, nec pharetra urna posuere in. Fusce lobortis, lorem id dapibus suscipit, tortor urna pretium sapien, sit amet maximus urna arcu semper orci. Morbi quis velit tellus. Morbi quis ex at enim tempus sodales. Nulla erat nulla, accumsan ut felis eu, aliquet tincidunt risus. Nullam id cursus mauris. Sed fermentum nisi orci, sit amet convallis justo consequat eget.</p>
-          </div>
-          <div class="col-lg-12 col-md-12 lawyer-cont">
-            <img src = "assets/img/team/team-4.png">
-             <h4 class="title"><a href="">Amanda Jepson</a></h4>
-             <p class="spec">Eu congue magna volutpat</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt nisi in purus lacinia aliquam non id nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin porttitor consequat ullamcorper. Donec sed faucibus nibh, nec faucibus augue. Aenean eu dolor pharetra, facilisis velit ut, tincidunt turpis. Curabitur eget mauris in enim vestibulum mattis. Mauris quis ante sed enim condimentum malesuada eget non nunc. Aliquam commodo justo non massa consequat, eget porta massa auctor. Mauris ipsum ligula, volutpat sed maximus eget, mollis a mauris.</p>
- 
-             <p>Vestibulum auctor arcu metus, eu congue magna volutpat vitae. Nunc maximus sapien nec fermentum lacinia. Praesent porttitor ultricies nisl, quis lacinia orci auctor vitae. Donec vitae nunc in dolor tempus commodo a quis mi. Nullam eu metus mattis felis tristique vehicula. Fusce sed eleifend sapien. Fusce pellentesque ligula ut dui ultrices bibendum. Aliquam sollicitudin leo id auctor fringilla. Pellentesque imperdiet odio non leo pulvinar congue. Curabitur consectetur mollis magna ac efficitur.</p>
-                 
-             <p>In molestie, nulla id scelerisque tristique, ligula magna suscipit nunc, in pulvinar orci mi in tortor. Duis lacinia erat semper lorem iaculis laoreet. Mauris id sem non metus lobortis accumsan. Sed facilisis libero lobortis est luctus, ut pulvinar nunc malesuada. Maecenas mollis felis magna, nec pharetra urna posuere in. Fusce lobortis, lorem id dapibus suscipit, tortor urna pretium sapien, sit amet maximus urna arcu semper orci. Morbi quis velit tellus. Morbi quis ex at enim tempus sodales. Nulla erat nulla, accumsan ut felis eu, aliquet tincidunt risus. Nullam id cursus mauris. Sed fermentum nisi orci, sit amet convallis justo consequat eget.</p>
+  <p>Jako członek naszego zespołu adwokackiego, Adwokat Adam Kowalski jest gotów podjąć wyzwania każdej trudnej sprawy, oferując klientom wysokiej jakości usługi prawne oparte na doświadczeniu i profesjonalizmie.</p>
            </div>
           
         </div>
@@ -129,55 +155,33 @@
 
         <div class="section-title">
           <h2>Kontakt</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Jeśli potrzebujesz pomocy prawnej lub masz pytania dotyczące naszych usług, skontaktuj się z nami za pomocą poniższego formularza. Jesteśmy tutaj, aby Ci pomóc!</p>
         </div>
-<!-- 
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Adres</h3>
-              <address>ul.Papugowa 25, 44-444 Papugowo </address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="bi bi-phone"></i>
-              <h3>Numer telefonu</h3>
-              <p><a href="tel:+155895548855">+48 123 456 789</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="bi bi-envelope"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@example.com">kancelaria@papuga.com</a></p>
-            </div>
-          </div>
-
-        </div> -->
 
         <div class="form">
-          <div class="row">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
               <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Imię i nazwisko">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Imię i nazwisko" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Adres E-mail">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Adres E-mail" data-rule="email" data-msg="Please enter a valid email">
               </div>
-          </div>
-          <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Temat">
-          </div>
-          <div class="form-group mt-3">
-              <textarea class="form-control" name="message" id="message" rows="5" placeholder="Wiadomość"></textarea>
-          </div>
-          <div style="margin-top: 10px;" class="text-center php-email-form"><button class="btn btn-secondary send-form" type="submit">Wyślij
-                  wiadomość</button></div>
-      </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Temat" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Wiadomość" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Ładowanie</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Twoja wiedomosć została wysłana</div>
+            </div>
+            <div class="text-center"><button type="submit">Wyślij wiadomość</button></div>
+          </form>
+        </div>
 
       </div>
     </section><!-- End Contact Section -->
@@ -192,7 +196,7 @@
 
           <div class="col-lg-5 col-md-6">
             <div class="footer-info">
-              <div class="logo"><a href="index.html"><img src="./assets/img/Papuga-logo_light.svg" alt="Papuga i spółka" height="80" width="350"></a></div>
+              <div class="logo"><a href="index.html"><img src="/assets/img/Papuga-logo_light.svg" alt="Papuga i spółka" height="80" width="350"></a></div>
               <p>
                 ul. Papugowa 25 <br>
                 44-444 Papugowo<br><br>
@@ -231,14 +235,6 @@
             </ul>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div> -->
 
         </div>
       </div>
@@ -249,7 +245,8 @@
         &copy; Copyright <strong><span>Papuga i Spółka</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Realizacja <a href="#">Grupa B</a>
+    
+        Realizacja <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Grupa B</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -265,10 +262,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/form.js"></script>
 
 </body>
 

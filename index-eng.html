@@ -6,42 +6,43 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Papuga i spółka - Law firm</title>
-	  <style>
-    body {
-      font-size: 16px;
-    }
+    <style>
+        body {
+            font-size: 16px;
+        }
 
-    .zoom-controls {
-      position: fixed;
-      top: 1px;
-      right: 10px;
-    }
+        .zoom-controls {
+            position: fixed;
+            top: 1px;
+            right: 10px;
+        }
 
-    .content {
-      margin-top: 0px;
-    }
-    .eng{
-        height:20px;
-        margin-left:20px
-    }
-  </style>
-	  <script>
-             let currentZoom = 100;
+        .content {
+            margin-top: 0px;
+        }
 
-    function zoomIn() {
-      currentZoom += 10;
-      updateZoom();
-    }
+        .eng {
+            height: 20px;
+            margin-left: 20px
+        }
+    </style>
+    <script>
+        let currentZoom = 100;
 
-    function zoomOut() {
-      currentZoom -= 10;
-      updateZoom();
-    }
+        function zoomIn() {
+            currentZoom += 10;
+            updateZoom();
+        }
 
-    function updateZoom() {
-      document.body.style.fontSize = `${currentZoom}%`;
-    }
-  </script>
+        function zoomOut() {
+            currentZoom -= 10;
+            updateZoom();
+        }
+
+        function updateZoom() {
+            document.body.style.fontSize = `${currentZoom}%`;
+        }
+    </script>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -92,79 +93,84 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#banner">Main</a></li>
-                    <li><a class="nav-link scrollto" href="#about">Law</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Our Team</a></li>
+                    <li><a class="nav-link scrollto active" href="./index-eng.html#banner">Main</a></li>
+                    <li><a class="nav-link scrollto" href="./index-eng.html#about">Law</a></li>
+                    <li><a class="nav-link scrollto" href="./index-eng.html#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="./index-eng.html#team">Our Team</a></li>
                     <!-- <li><a href="blog.html">Blog</a></li> -->
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="./index-eng.html#contact">Contact</a></li>
                     <!-- <li><a class="getstarted scrollto" href="#about">Formularz</a></li> -->
-                    <li><a class="nav-link scrollto " href="gallery.html">Gallery</a></li>
+                    <li><a class="nav-link scrollto " href="gallery-eng.html">Gallery</a></li>
                 </ul>
                 <a href="./index.html">
                     <img src="./assets/img/polski.png" alt="polska fleaga" class="eng">
                 </a>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-  <div class="zoom-controls">
-    <button onclick="zoomIn()">Enlarge</button>
-    <button onclick="zoomOut()">Reduce</button>
-        </div>
+            <div class="zoom-controls">
+                <button onclick="zoomIn()">Enlarge</button>
+                <button onclick="zoomOut()">Reduce</button>
+            </div>
     </header>
     <!-- End Header -->
 
     <!-- Main Banner  -->
     <section id="banner" class="content">
         <div class="banner-container">
-		
-  </div>
-            <div id="bannerCarousel" class="content">
 
-                <ol class="carousel-indicators" id="banner-carousel-indicators"></ol>
+        </div>
+        <div id="bannerCarousel" class="content">
 
-                <div class="carousel-inner" class="content">
+            <ol class="carousel-indicators" id="banner-carousel-indicators"></ol>
 
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background-image: url(./assets/img/slide/slide-1.jpg)">
-                        <div class="carousel-container">
-                            <div class="carousel-content">
-                                <h2>Papuga i spółka - Law firm</h2>
-                                <p>Tremendous experience and high qualifications enable us to provide clients with services at the highest level.</p>
-                            </div>
+            <div class="carousel-inner" class="content">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(./assets/img/slide/slide-1.jpg)">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Papuga i spółka - Law firm</h2>
+                            <p>Tremendous experience and high qualifications enable us to provide clients with services
+                                at the highest level.</p>
                         </div>
                     </div>
-
-                    <!-- Slide 2 -->
-                    <div class="carousel-item" style="background-image: url(./assets/img/slide/slide-2.png)">
-                        <div class="carousel-container content">
-                            <div class="carousel-content">
-                                <h2>We'll take care of your case!</h2>
-                                <p>The law firm specializes in criminal, tax-criminal, enforcement, family cases, and provides assistance to holders of Swiss franc mortgages. Our firm offers legal assistance to individuals and businesses alike. We invite you to contact us by phone to discuss the details. We will definitely find a solution to your problem.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="carousel-item" style="background-image: url(./assets/img/slide/slide-3.jpg)">
-                        <div class="carousel-container">
-                            <div class="carousel-content">
-                                <h2>Get in touch with us.</h2>
-                                <p>Our experienced lawyers are ready to answer your questions and help you resolve any legal issues. <br> Don't hesitate – get in touch with us now!</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(./assets/img/slide/slide-2.png)">
+                    <div class="carousel-container content">
+                        <div class="carousel-content">
+                            <h2>We'll take care of your case!</h2>
+                            <p>The law firm specializes in criminal, tax-criminal, enforcement, family cases, and
+                                provides assistance to holders of Swiss franc mortgages. Our firm offers legal
+                                assistance to individuals and businesses alike. We invite you to contact us by phone to
+                                discuss the details. We will definitely find a solution to your problem.</p>
+                        </div>
+                    </div>
+                </div>
 
-                <a class="carousel-control-next" href="#bannerCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(./assets/img/slide/slide-3.jpg)">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Get in touch with us.</h2>
+                            <p>Our experienced lawyers are ready to answer your questions and help you resolve any legal
+                                issues. <br> Don't hesitate – get in touch with us now!</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+
+            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
         </div>
     </section>
     <!-- End Banner  -->
@@ -183,9 +189,10 @@
                         <div class="content d-flex flex-column justify-content-center ">
                             <h3>Kancelaria Papuga i Spółka</h3>
                             <p>
-                                Our law firm offers a wide range of handled cases, including civil, inheritance, family, and construction law.
+                                Our law firm offers a wide range of handled cases, including civil, inheritance, family,
+                                and construction law.
                                 We represent our clients in cases:
-                                
+
                             </p>
                             <ul>
                                 <li><i class="bi-bookmark-check"></i> compensation and compensation</li>
@@ -194,8 +201,11 @@
                                 <li><i class="bi-bookmark-check"></i> legitim and division of the inheritance</li>
                             </ul>
                             <p>
-                                Thanks to our experience, we realistically assess the situation and always try to develop the best possible solutions.
-                                <br><br> Our lawyers provide comprehensive legal services, from providing legal advice through preparing documentation and pleadings, to representing clients in administrative and court proceedings.
+                                Thanks to our experience, we realistically assess the situation and always try to
+                                develop the best possible solutions.
+                                <br><br> Our lawyers provide comprehensive legal services, from providing legal advice
+                                through preparing documentation and pleadings, to representing clients in administrative
+                                and court proceedings.
                             </p>
                         </div>
                         <!-- End .content-->
@@ -212,7 +222,11 @@
 
                 <div class="section-title">
                     <h2>Services</h2>
-                    <p> Our law firm offers a wide range of services, including providing legal advice and consultations, preparing all types of pleadings, preparing and analyzing contracts and legal opinions, representing the client before courts or offices, participating in negotiations, assistance in debt collection and debt recovery. Our team consists of experienced lawyers who will help you in any situation. </p>
+                    <p> Our law firm offers a wide range of services, including providing legal advice and
+                        consultations, preparing all types of pleadings, preparing and analyzing contracts and legal
+                        opinions, representing the client before courts or offices, participating in negotiations,
+                        assistance in debt collection and debt recovery. Our team consists of experienced lawyers who
+                        will help you in any situation. </p>
                 </div>
 
                 <div class="row">
@@ -224,22 +238,26 @@
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-card-checklist"></i></div>
                         <h4 class="title"><a href="">Legal Representation</a></h4>
-                        <p class="description">Representing clients in courts or government offices, participating in negotiations, assisting in debt collection and recovery.</p>
+                        <p class="description">Representing clients in courts or government offices, participating in
+                            negotiations, assisting in debt collection and recovery.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-bar-chart"></i></div>
                         <h4 class="title"><a href="">Our Achievements</a></h4>
-                        <p class="description">Our team consists of experienced lawyers with numerous successes who will assist you in any situation.</p>
+                        <p class="description">Our team consists of experienced lawyers with numerous successes who will
+                            assist you in any situation.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-binoculars"></i></div>
                         <h4 class="title"><a href="">Finding the Best Way</a></h4>
-                        <p class="description">Remember that a good lawyer is one who can listen to their client, understand their needs, and help solve the problem.</p>
+                        <p class="description">Remember that a good lawyer is one who can listen to their client,
+                            understand their needs, and help solve the problem.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-brightness-high"></i></div>
                         <h4 class="title"><a href="">Simplicity of Action</a></h4>
-                        <p class="description">Contact us for professional legal assistance and join the ranks of satisfied clients.</p>
+                        <p class="description">Contact us for professional legal assistance and join the ranks of
+                            satisfied clients.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-calendar4-week"></i></div>
@@ -258,7 +276,9 @@
 
                 <div class="section-title">
                     <h2>Our Team</h2>
-                    <p>Our team of lawyers is a group of passionate experts dedicated to upholding justice and protecting the rights of our clients. With our legal knowledge and years of experience, we are ready to meet the most challenging legal challenges.</p>
+                    <p>Our team of lawyers is a group of passionate experts dedicated to upholding justice and
+                        protecting the rights of our clients. With our legal knowledge and years of experience, we are
+                        ready to meet the most challenging legal challenges.</p>
                 </div>
 
                 <div class="row">
@@ -340,7 +360,7 @@
                 <div class="lawyers-page">
                     <h4 style="text-align: center; margin-bottom: 20px;">Learn More About Our Attorneys</h4>
                     <div style="text-align: center; margin-top: 10px;">
-                        <a style="border: 2px solid #c98d2d; padding: .5rem 1rem; border-radius: 8px; margin-top: 10px;" href="lawyers.html">Przejdz do strony adwokatów</a>
+                        <a style="border: 2px solid #c98d2d; padding: .5rem 1rem; border-radius: 8px; margin-top: 10px;" href="lawyers-eng.html">Go to the lawyers' page</a>
                     </div>
                 </div>
 
@@ -351,12 +371,13 @@
         <!-- ======= Frequently Asked Questions Section ======= -->
         <section id="faq" class="faq section-bg">
             <div class="container">
-        
+
                 <div class="section-title">
                     <h2>Frequently Asked Questions</h2>
-                    <p>Here are some frequently asked questions by our clients, and our extensive experience allows us to provide concise answers.</p>
+                    <p>Here are some frequently asked questions by our clients, and our extensive experience allows us
+                        to provide concise answers.</p>
                 </div>
-        
+
                 <div class="faq-list">
                     <ul>
                         <li data-aos="fade-up">
@@ -366,54 +387,78 @@
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                 <p>
-                                    Schedule a meeting with a lawyer in advance to reserve an appropriate amount of time.
-                                    Gather and organize all documents related to your case, such as contracts, correspondence, evidence, bills, etc.
-                                    Make a note of the most important dates, facts, and questions you want to ask the lawyer.
+                                    Schedule a meeting with a lawyer in advance to reserve an appropriate amount of
+                                    time.
+                                    Gather and organize all documents related to your case, such as contracts,
+                                    correspondence, evidence, bills, etc.
+                                    Make a note of the most important dates, facts, and questions you want to ask the
+                                    lawyer.
                                 </p>
                             </div>
                         </li>
-        
+
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">What are the costs of legal services? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-2" class="collapsed">What are the costs of legal services? <i
+                                    class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    The costs of legal services depend on the type and complexity of the case, as well as the time and effort required to handle it. The amount of compensation is negotiated individually with each client, taking into account their financial situation and expectations. Various forms of billing are possible, such as flat fee, hourly rate, percentage of the dispute's value, or success bonus.
+                                    The costs of legal services depend on the type and complexity of the case, as well
+                                    as the time and effort required to handle it. The amount of compensation is
+                                    negotiated individually with each client, taking into account their financial
+                                    situation and expectations. Various forms of billing are possible, such as flat fee,
+                                    hourly rate, percentage of the dispute's value, or success bonus.
                                 </p>
                             </div>
                         </li>
-        
+
                         <li data-aos="fade-up" data-aos-delay="200">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-3" class="collapsed">Can the law firm handle a case remotely? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-3" class="collapsed">Can the law firm handle a case remotely?
+                                <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Yes, the law firm can handle cases remotely, without the need for a personal meeting with the client. In such cases, contact with the client is conducted via email, phone, or video conference. The client sends the necessary documents to the law firm electronically or by mail, and the law firm prepares and sends a power of attorney for the client to sign and return. Then the law firm represents the client in court or another authority and keeps the client informed about the progress of the case.
+                                    Yes, the law firm can handle cases remotely, without the need for a personal meeting
+                                    with the client. In such cases, contact with the client is conducted via email,
+                                    phone, or video conference. The client sends the necessary documents to the law firm
+                                    electronically or by mail, and the law firm prepares and sends a power of attorney
+                                    for the client to sign and return. Then the law firm represents the client in court
+                                    or another authority and keeps the client informed about the progress of the case.
                                 </p>
                             </div>
                         </li>
-        
+
                         <li data-aos="fade-up" data-aos-delay="300">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-4" class="collapsed">What are the specializations of the law firm? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-4" class="collapsed">What are the specializations of the law
+                                firm? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    The law firm specializes in civil law, particularly inheritance law, law of obligations, family law, and labor law. The law firm also deals with criminal, administrative, and economic cases. The law firm provides services for both individuals and businesses. The law firm offers comprehensive legal assistance, including legal advice, drafting procedural documents, contracts, and other documents, representation in courts and administrative bodies, mediation, and negotiations.
+                                    The law firm specializes in civil law, particularly inheritance law, law of
+                                    obligations, family law, and labor law. The law firm also deals with criminal,
+                                    administrative, and economic cases. The law firm provides services for both
+                                    individuals and businesses. The law firm offers comprehensive legal assistance,
+                                    including legal advice, drafting procedural documents, contracts, and other
+                                    documents, representation in courts and administrative bodies, mediation, and
+                                    negotiations.
                                 </p>
                             </div>
                         </li>
-        
+
                         <li data-aos="fade-up" data-aos-delay="400">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">What is a legal advisor, and how does it differ from a lawyer? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-5" class="collapsed">What is a legal advisor, and how does it
+                                differ from a lawyer? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    The difference between a legal advisor and a lawyer mainly lies in the form of employment and the scope of representation in criminal and tax cases. Both professions, however, require high qualifications and experience in the field of law. The choice between them depends on the specific needs of the client.
+                                    The difference between a legal advisor and a lawyer mainly lies in the form of
+                                    employment and the scope of representation in criminal and tax cases. Both
+                                    professions, however, require high qualifications and experience in the field of
+                                    law. The choice between them depends on the specific needs of the client.
                                 </p>
                             </div>
                         </li>
@@ -421,20 +466,22 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- End Frequently Asked Questions Section -->
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
             <div class="container">
-        
+
                 <div class="section-title">
                     <h2>Contact</h2>
-                    <p>Our lawyers are ready to answer your questions, schedule a consultation, or provide quick legal advice. Whether you need support in civil, criminal, corporate, or any other matter, we are here to assist you.</p>
+                    <p>Our lawyers are ready to answer your questions, schedule a consultation, or provide quick legal
+                        advice. Whether you need support in civil, criminal, corporate, or any other matter, we are here
+                        to assist you.</p>
                 </div>
-        
+
                 <div class="row contact-info">
-        
+
                     <div class="col-md-4">
                         <div class="contact-address">
                             <i class="bi bi-geo-alt"></i>
@@ -442,7 +489,7 @@
                             <address>25 Parrot Street, 44-444 Parrotville</address>
                         </div>
                     </div>
-        
+
                     <div class="col-md-4">
                         <div class="contact-phone">
                             <i class="bi bi-phone"></i>
@@ -450,7 +497,7 @@
                             <p><a href="tel:+155895548855">+48 123 456 789</a></p>
                         </div>
                     </div>
-        
+
                     <div class="col-md-4">
                         <div class="contact-email">
                             <i class="bi bi-envelope"></i>
@@ -458,30 +505,33 @@
                             <p><a href="mailto:info@example.com">lawfirm@parrot.com</a></p>
                         </div>
                     </div>
-        
+
                 </div>
-        
+
                 <div class="form">
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Full Name">
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Email Address">
                         </div>
                     </div>
                     <div class="form-group mt-3">
                         <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                     </div>
                     <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="5"
+                            placeholder="Message"></textarea>
                     </div>
-                    <div style="margin-top: 10px;" class="text-center php-email-form"><button class="btn btn-secondary send-form" type="submit">Send Message</button></div>
+                    <div style="margin-top: 10px;" class="text-center php-email-form"><button
+                            class="btn btn-secondary send-form" type="submit">Send Message</button></div>
                 </div>
-        
+
             </div>
         </section>
-        
+
         <!-- End Contact Section -->
 
     </main>
