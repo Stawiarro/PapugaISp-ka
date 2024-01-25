@@ -6,6 +6,38 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Papuga i spółka - kancelaria prawna</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .zoom-controls {
+            position: fixed;
+            top: 1px;
+            right: 10px;
+        }
+
+        .content {
+            margin-top: 0px;
+        }
+    </style>
+    <script>
+        let currentZoom = 100;
+
+        function zoomIn() {
+            currentZoom += 10;
+            updateZoom();
+        }
+
+        function zoomOut() {
+            currentZoom -= 10;
+            updateZoom();
+        }
+
+        function updateZoom() {
+            document.body.style.fontSize = `${currentZoom}%`;
+        }
+    </script>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -41,9 +73,9 @@
     <script src="assets/js/form.js"></script>
 </head>
 
-<body>
+<body class="content">
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center">
+    <header id="header" class="fixed-top d-flex align-items-center content">
         <div class="container d-flex align-items-center justify-content-between">
 
             <div class="logo">
@@ -67,67 +99,72 @@
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-
-        </div>
+            <div class="zoom-controls">
+                <button onclick="zoomIn()">Powiększ</button>
+                <button onclick="zoomOut()">Zmniejsz</button>
+            </div>
     </header>
     <!-- End Header -->
 
     <!-- Main Banner  -->
-    <section id="banner">
+    <section id="banner" class="content">
         <div class="banner-container">
-            <div id="bannerCarousel">
 
-                <ol class="carousel-indicators" id="banner-carousel-indicators"></ol>
+        </div>
+        <div id="bannerCarousel" class="content">
 
-                <div class="carousel-inner">
+            <ol class="carousel-indicators" id="banner-carousel-indicators"></ol>
 
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background-image: url(./assets/img/slide/slide-1.jpg)">
-                        <div class="carousel-container">
-                            <div class="carousel-content">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
-                                    nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
-                                    doloremque accusamus lorem repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                            </div>
+            <div class="carousel-inner" class="content">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(./assets/img/slide/slide-1.jpg)">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
+                                nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+                                doloremque accusamus lorem repellendus deleniti vel. Minus et tempore modi architecto.
+                            </p>
                         </div>
                     </div>
-
-                    <!-- Slide 2 -->
-                    <div class="carousel-item" style="background-image: url(./assets/img/slide/slide-2.png)">
-                        <div class="carousel-container">
-                            <div class="carousel-content">
-                                <h2>Lorem Ipsum Dolor</h2>
-                                <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
-                                    nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
-                                    doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="carousel-item" style="background-image: url(./assets/img/slide/slide-3.jpg)">
-                        <div class="carousel-container">
-                            <div class="carousel-content">
-                                <h2>Sequi ea ut et est quaerat</h2>
-                                <pUt velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
-                                    nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
-                                    doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(./assets/img/slide/slide-2.png)">
+                    <div class="carousel-container content">
+                        <div class="carousel-content">
+                            <h2>Lorem Ipsum Dolor</h2>
+                            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
+                                nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+                                doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                        </div>
+                    </div>
+                </div>
 
-                <a class="carousel-control-next" href="#bannerCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(./assets/img/slide/slide-3.jpg)">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Sequi ea ut et est quaerat</h2>
+                            <pUt velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil
+                                ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+                                doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+
+            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
         </div>
     </section>
     <!-- End Banner  -->
@@ -176,48 +213,50 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Usługi</h2> 
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <h2>Usługi</h2>
+                    <p> Nasza kancelaria oferuje szeroki zakres usług, w tym udzielanie porad prawnych i konsultacji,
+                        opracowywanie wszelkiego rodzaju pism procesowych, sporządzanie i analiza umów i opinii
+                        prawnych, reprezentowanie klienta przed sądami lub urzędami, udział w negocjacjach, pomoc w
+                        windykacji i odzyskiwaniu należności. Nasz zespół składa się z doświadczonych adwokatów, którzy
+                        pomogą Ci w każdej sytuacji. </p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-briefcase"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                            excepturi sint occaecati cupiditate non provident</p>
+                        <h4 class="title"><a href="">Porady biznesowe</a></h4>
+                        <p class="description">Zaufaj nam i skontaktuj się z nami już dziś, aby uzyskać profesjonalną
+                            pomoc prawną. </p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-card-checklist"></i></div>
-                        <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat tarad limino ata</p>
+                        <h4 class="title"><a href="">Reprezentacja prawna</a></h4>
+                        <p class="description">Reprezentowanie klienta przed sądami lub urzędami, biorąc udział w
+                            negocjacjach, pomagając w windykacji i odzyskiwaniu należności. </p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-bar-chart"></i></div>
-                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur</p>
+                        <h4 class="title"><a href="">Nasze sukcesy</a></h4>
+                        <p class="description">Nasz zespół składa się z doświadczonych prawników z wieloma sukcesami,
+                            którzy pomogą Ci w każdej sytuacji. </p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-binoculars"></i></div>
-                        <h4 class="title"><a href="">Magni Dolores</a></h4>
-                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum</p>
+                        <h4 class="title"><a href="">Szukanie najlepszej drogi</a></h4>
+                        <p class="description">Pamiętaj, że dobry adwokat to taki, który potrafi słuchać swojego
+                            klienta, zrozumieć jego potrzeby i pomóc w rozwiązaniu problemu.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-brightness-high"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium voluptatum deleniti atque</p>
+                        <h4 class="title"><a href="">Prostota działania</a></h4>
+                        <p class="description">Skontaktuj się z nami, aby uzyskać profesjonalną pomoc prawną i dołączyć
+                            do grona zadowolonych klientów.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box">
                         <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-                        <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                            tempore, cum soluta nobis est eligendi</p>
+                        <h4 class="title"><a href="">Kontakt z nami</a></h4>
+                        <p class="description"> Aby umówić się na wizytę, skontaktuj się z nami telefonicznie lub
+                            mailowo</p>
                     </div>
                 </div>
 
@@ -315,7 +354,8 @@
                 <div class="lawyers-page">
                     <h4 style="text-align: center; margin-bottom: 20px;">Dowiedź się wiecej o naszych adwokatach</h4>
                     <div style="text-align: center; margin-top: 10px;">
-                        <a style="border: 2px solid #c98d2d; padding: .5rem 1rem; border-radius: 8px; margin-top: 10px;" href="lawyers.html">Przejdz do strony adwokatów</a>
+                        <a style="border: 2px solid #c98d2d; padding: .5rem 1rem; border-radius: 8px; margin-top: 10px;"
+                            href="lawyers.html">Przejdz do strony adwokatów</a>
                     </div>
                 </div>
 
@@ -329,82 +369,91 @@
 
                 <div class="section-title">
                     <h2>Najczęściej zadawane pytania</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Oto przykładowe pytania zadawane najczęściej przez naszych klientów, nasze wieloletnie
+                        doświadczenie pozwoliło nam na krótkie i treściwe odpowiedzi.</p>
                 </div>
 
                 <div class="faq-list">
                     <ul>
                         <li data-aos="fade-up">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
+                                data-bs-target="#faq-list-1">Jak przygotować się do spotkania z adwokatem? <i
                                     class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                    purus non.
+                                    Umów się na spotkanie z adwokatem wcześniej, aby zarezerwować odpowiednią ilość
+                                    czasu.
+                                    Zbierz i posortuj wszystkie dokumenty, które są związane z Twoją sprawą, takie jak
+                                    umowy, korespondencja, dowody, rachunki itp.
+                                    Zapisz sobie najważniejsze daty, fakty i pytania, które chcesz zadać adwokatowi.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim
-                                nunc? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-2" class="collapsed">Jakie są koszty usług adwokackich? <i
+                                    class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
+                                    oszty usług adwokackich zależą od rodzaju i złożoności sprawy, a także od czasu i
+                                    nakładu pracy, jaki jest potrzebny do jej prowadzenia. Wysokość wynagrodzenia
+                                    ustalana jest indywidualnie z każdym klientem, przy uwzględnieniu jego sytuacji
+                                    finansowej i oczekiwań. Możliwe są różne formy rozliczenia, np. ryczałt, stawka
+                                    godzinowa, procent od wartości przedmiotu sporu lub premia za sukces.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="200">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing
-                                elit? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-3" class="collapsed">Czy mogę zlecić kancelarii prowadzenie
+                                sprawy na odległość? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
-                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    Tak, kancelaria może prowadzić sprawy na odległość, bez konieczności osobistego
+                                    spotkania z klientem. W takim przypadku, kontakt z klientem odbywa się za
+                                    pośrednictwem e-maila, telefonu lub wideokonferencji. Klient przesyła kancelarii
+                                    niezbędne dokumenty w formie elektronicznej lub pocztowej, a kancelaria przygotowuje
+                                    i wysyła klientowi pełnomocnictwo do podpisania i odesłania. Następnie kancelaria
+                                    reprezentuje klienta przed sądem lub innym organem i informuje go o przebiegu
+                                    sprawy.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="300">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam
-                                sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-4" class="collapsed">Jakie są specjalności kancelarii? <i
+                                    class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
-                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                                    Kancelaria specjalizuje się w sprawach z zakresu prawa cywilnego, w szczególności
+                                    prawa spadkowego, prawa zobowiązań, prawa rodzinnego i prawa pracy. Kancelaria
+                                    zajmuje się także sprawami karnymi, administracyjnymi i gospodarczymi. Kancelaria
+                                    świadczy usługi zarówno dla osób fizycznych, jak i dla podmiotów gospodarczych.
+                                    Kancelaria oferuje kompleksową obsługę prawną, obejmującą porady prawne,
+                                    sporządzanie pism procesowych, umów i innych dokumentów, reprezentację przed sądami
+                                    i organami administracji, mediację i negocjacje.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="400">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare.
-                                Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
+                                data-bs-target="#faq-list-5" class="collapsed">Kim jest radca prawny i jak różni się od
+                                adwokata? <i class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
-                                    integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                                    Różnica między radcą prawnym a adwokatem polega więc głównie na formie zatrudnienia
+                                    i zakresie reprezentacji w sprawach karnych i karnoskarbowych. Obie profesje
+                                    wymagają jednak wysokich kwalifikacji i doświadczenia w zakresie prawa. Wybór między
+                                    nimi zależy od specyficznych potrzeb klienta.
                                 </p>
                             </div>
                         </li>
@@ -468,16 +517,26 @@
                         <input type="text" class="form-control" name="subject" id="subject" placeholder="Temat">
                     </div>
                     <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Wiadomość"></textarea>
+                        <textarea class="form-control" name="message" id="message" rows="5"
+                            placeholder="Wiadomość"></textarea>
                     </div>
-                    <div style="margin-top: 10px;" class="text-center php-email-form"><button class="btn btn-secondary send-form" type="submit">Wyślij
+                    <div style="margin-top: 10px;" class="text-center php-email-form"><button
+                            class="btn btn-secondary send-form" type="submit">Wyślij
                             wiadomość</button></div>
                 </div>
 
             </div>
         </section>
         <!-- End Contact Section -->
-
+        <!-- Google maps link-->
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Prószkowska%2076,%2045-758%20Opole&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+        <!-- End Google maps link-->
     </main>
     <!-- End #main -->
 
